@@ -1,0 +1,684 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #fff;
+  
+}
+header div{
+  float: left;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  margin-left: 150px;
+  padding: 20px;
+}
+header .nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 200px;
+}
+header .nav ul{
+  list-style: none;
+
+}
+header .nav ul li{
+  float: left;
+  padding-right: 40px;
+  padding-top: 10px;
+
+}
+header .nav ul li a{
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+header .nav ul li:first-child{
+  color: #7f97ff;
+}
+header .nav ul li a:hover{
+  color: #7f97ff;
+  transition: all 0.3s ease;
+}
+
+#check{
+  display: none;
+
+}
+.checkbtn{
+  display: none;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 80px;
+  float: right;
+  margin-right: -170px;
+}
+
+/* hero-section */
+
+.hero-section{
+  background-color: #f9f9ff;
+  width: 100%;
+  height: 665px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 75px;
+}
+.hero-text, .hero-image{
+  width: 50%;
+  
+}
+.hero-text{
+  margin-left: 160px;
+  margin-bottom: 120px;
+}
+.hero-image{
+  padding-right: 150px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.hero-image img{
+  max-width: 100%;
+  height: auto;
+
+}
+.hero-text h6{
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+ 
+}
+.hero-text h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+.hero-text p{
+  color: rgba(83, 83, 83, 0.7);
+  margin-top: -25px;
+  font-size: 15px;
+}
+.hero-text input{
+  padding: 13px 30px;
+  background: linear-gradient(#8393ff, rgb(63, 195, 247));
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero-text input:hover{
+  box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
+  transition: all 0.2s ease-in;
+
+}
+
+/* about-section */
+
+.about-section{
+  width: 100%;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section div{
+  width: 40%;
+  margin: 0 auto;
+}
+.about-image img{
+  width: 100%;
+  height: auto;
+}
+.about-image{
+  padding-left: 100px;
+}
+.about-text h6{
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.about-text h1{
+  font-size: 35px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.about-text p{
+  max-width: 445px;
+  margin-bottom: 30px;
+  line-height: 25px;
+  font-size: 15px;
+  color: rgba(83, 83, 83, 0.7);
+}
+.about-text input{
+  padding: 13px 30px;
+  background: linear-gradient(#8393ff, rgb(63, 195, 247));
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-text input:hover{
+  box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+/* service area */
+
+.service-area{
+  width: 100%;
+  height: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.service-area .service-text h1{
+  font-size: 40px;
+  line-height: 10px;
+}
+.service-text p{
+  width: 670px;
+  color: rgba(128, 128, 128, 0.7);
+  margin: 0 auto;
+
+}
+
+.service{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.service1, .service2{
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+.service2{
+  padding-top: 60px;
+}
+.service1 div, .service2 div{
+  width: 32%;
+  float: left;
+  padding: 7px;
+  margin: 0 auto;
+
+}
+.service i{
+  font-size: 45px;
+  color: rgba(56, 56, 56, 0.7);
+}
+.service h3{
+  color: rgba(37, 37, 37, 0.9);
+  margin-top: 35px;
+}
+.service p{
+  color: rgba(128, 128, 128, 0.7);
+  line-height: 25px;
+  font-size: 15px;
+
+}
+.service1 div:hover{
+  background: linear-gradient(#8393ff, rgb(63, 195, 247));
+  box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
+  transition: all 0.3s ease-in-out;
+
+}
+.service1 div:hover i{
+  color: white;
+}
+.service1 div:hover h3{
+  color: white;
+}
+.service1 div:hover p{
+  color: white;
+}
+.service2 div:hover{
+  background: linear-gradient(#8393ff, rgb(63, 195, 247));
+  box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.service2 div:hover i{
+  color: white;
+}
+.service2 div:hover h3{
+  color: white;
+}
+.service2 div:hover p{
+  color: white;
+}
+
+/* count area */
+
+.count-area{
+  margin-top: 150px;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(#8393ff, rgb(63, 195, 247));
+  
+}
+.count-area div{
+  float: left;
+  width: 20%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+.count-area h1{
+  font-size: 45px;
+  line-height: 0px;
+  color: white;
+  text-align: center;
+}
+.count-area p{
+  color: white;
+  text-align: center;
+  margin-top: -7px;
+}
+
+/* content area */
+
+.content-area{
+  width: 100%;
+  box-sizing: border-box;
+}
+.content-text{
+  text-align: center;
+}
+.content-text h1{
+  font-size: 40px;
+  color: rgba(37, 37, 37, 0.9);
+  line-height: 0;
+  margin-top: 150px;
+}
+.content-text p{
+  color: rgba(90, 90, 90, 0.7);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.box1 h4{
+  font-size: 17.5px;
+  line-height: normal;
+  color: rgba(37, 37, 37, 0.9);
+}
+.box1 p{
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.7);
+  margin-top: -15px;
+}
+.main-content figure{
+  background: linear-gradient(40deg, #8490ff 40%, #62bdfc 100%);
+  width: 340px;
+  height: 339px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 3%;
+}
+.main-content figure:hover img{
+  opacity: 0.3;
+  transition: all 0.3s ease-in;
+}
+
+/* price area */
+
+.price-area{
+  width: 100%;
+  height: 700px;
+  margin-top: 70px;
+}
+.price-area .price-text{
+  text-align: center;
+  padding: 2% 0;
+}
+.price-text h1{
+  font-size: 40px;
+  line-height: 0;
+  padding-top: 15px;
+
+}
+.price-text p{
+  color: rgba(128, 128, 128, 0.7);
+}
+.price-parent{
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.price-parent .item1{
+  width: 300px;
+  height: 530px;
+  padding-bottom: 20px;
+  background-color: rgb(249, 249, 255);
+  text-align: center;
+  border: 1px solid rgba(56, 56, 56, 0.1);
+}
+.price-parent .item1 h1{
+  font-size: 50px;
+  padding-top: 8px;
+}
+.price-parent .item1 .price{
+  font-size: 35px;
+}
+.price-parent .item1 p{
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.7);
+}
+.price-parent .item1 input{
+  outline: none;
+  border: 1px solid white;
+  background-color: #62bdfc;
+  color: white;
+  font-size: 25px;
+  padding: 6px 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.price-parent .item1:hover{
+  background-color: #62bdfc;
+  color: white;
+  transition: all 0.25s ease-in;
+  transform: scale(1.05);
+  border: 1px solid rgba(138, 147, 155, 0.5);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+.price-parent .item1:hover input{
+  color: rgba(56, 56, 56, 0.9);
+  background-color: white;
+  transition: all 0.25s ease-in;  
+}
+.price-parent .item1:hover p{
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+/* footer */
+
+footer{
+  background-color: rgb(4, 9, 13);
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  color: white;
+  margin-top: 300px;
+}
+footer .footer-parent{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+footer .footer-parent .foot p{
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 25px;
+  font-size: 14px;
+
+}
+.about{
+  width: 450px;
+}
+.footer-parent .foot input{
+  font-size: 15px;
+  outline: none;
+  border: none;
+  padding: 10px 150px 10px 10px;
+}
+.footer-parent .foot button{
+  font-size: 18px;
+  color: white;
+  background-color: #62bdfc;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-left: -5px;
+}
+.footer-parent .foot i{
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 5px;
+
+
+}
+.footer-parent .foot i:hover{
+  color: #62bdfc;
+  transition:  all 0.2s ease;
+} 
+
+/* responsive */
+
+@media(max-width:768px){
+    header{
+      width: 100%;
+      height: auto;
+    }
+    header .logo{
+      margin-left: 30px;
+      padding: 20px;
+
+    }
+    .checkbtn{
+      display: block;
+    }
+    header .nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #f9f9ff;
+      top: 54px;
+      left: -200%;
+      transition: all 0.1s ease;
+    }
+    header .nav ul li{
+      line-height: 30px;
+      clear: both;
+      margin-top: 15px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    header .nav ul li a{
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* hero-section */
+
+    .hero-section{
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    .hero-text{
+      margin: auto;
+      padding: 0;
+    }
+    .hero-text h6{
+      font-size: 13px;
+      margin: 40px 0;
+    }
+    .hero-text h1{
+      font-size: 30px;
+      margin-bottom: 40px;
+      
+    }
+    .hero-image img{
+      margin-left: 90px;
+      margin-top: 30px;
+      max-width: 100%;
+      min-height: auto;
+    }
+    
+    /* about section */
+
+    .about-section{
+      display: block;
+      width: 100%;
+      height: 100vh;
+      top: 150px;
+      position: relative;
+    }
+    .about-section .about-image{
+      position: relative;
+      right: 100px;
+
+    }
+    .about-section div{
+      width: 100%;
+    }
+    .about-text{
+      position: relative;
+      left: 15px;
+      text-align: center !important;
+    }
+    .about-text h6{
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .about-text h1{
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.9);
+    }
+    .about-text p{
+      width: 80%;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.9);
+      margin-left: 50px !important;
+    }
+
+    /* service area */
+
+    .service-area{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 400px;
+    }
+    .service-text > h1{
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.9);
+
+    }
+    .service-text p{
+      width: 80%;
+    }
+    .service .service1 div, .service2 div{
+      clear: left;
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    /* count area */
+
+    .count-area{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      top: 400px;
+      
+    }
+    .count-area div{
+      clear: left;
+      margin-left: 40px;
+      
+    }
+    
+
+    /* content area */
+
+    .content-area{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 400px;
+
+    }
+  .content-area .content-text h1{
+    line-height: 50px;
+  }
+  .content-area .content-text p{
+    margin-top: -15px;
+  }
+
+  /* price area */
+
+  .price-area{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 400px;
+  }
+  .price-area .price-text h1{
+    font-size: 30px;
+  }
+  .price-area .price-text p{
+    width: 80%;
+    margin: auto;
+  }
+  .price-area .price-parent{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 90px;
+  }
+  footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 100em;
+  }
+  .price-parent .item1{
+    margin-top: 50px;
+  }
+  footer .footer-parent{
+    display: block;
+    position: relative;
+    top: 100px;
+  }
+  .foot .foot-p{
+    width: 80%;
+  }
+  .footer-parent .news button{
+    margin-left: 0px;
+    
+  }
+
+
+
+
+}
+
+
+
